@@ -23,6 +23,9 @@ public class insertAtAny {
             for(int i=1;i<=pos-2&&curr!=null;i++){
                 curr=curr.next;
             }
+            if(curr==null){
+                return curr;
+            }
             n.next=curr.next;
             curr.next=n;
             return head;
